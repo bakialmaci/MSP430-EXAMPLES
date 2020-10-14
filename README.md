@@ -10,4 +10,4 @@
 Contributions are always welcome!
 
 # License
-This repository is released under the terms of the GP -3.0 license.
+This repository is released under the terms of the GPL -3.0 license.
