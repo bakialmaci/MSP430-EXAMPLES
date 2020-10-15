@@ -12,9 +12,14 @@
 #define ENABLE_PINS 0xFFFE // Required to use inputs and outputs
 
 void delay_ms(unsigned int ms){
-    unsigned int i;
-    for (i = 0; i<= ms; i++)
-       __delay_cycles(16000);
+    while (ms){
+        /*
+         By default 1MHz clock cycle and it can be configure but not necessary for now.
+         Also _delay_cycles not recommended. Timer module has more accuracy than __delay_cycles.
+         */
+        __delay_cycles(1000);
+        ms--;
+    }
 }
 
 void main(){
@@ -39,7 +44,7 @@ void main(){
 
         if((BUTTON & P1IN) == 0X00){
             status = (status == 3) ? 0 : status+1;
-            delay_ms(20);
+            delay_ms(100);
         }
 
         if((status % 4) == 0){
