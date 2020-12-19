@@ -1,0 +1,1297 @@
+******************************************************************************
+                  MSP430 Linker PC v20.2.4                     
+******************************************************************************
+>> Linked Sat Dec 19 18:17:18 2020
+
+OUTPUT FILE NAME:   <experiment2.1.out>
+ENTRY POINT SYMBOL: "_c_int00_noinit_noargs"  address: 0000c4da
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+----------------------  --------  ---------  --------  --------  ----  --------
+  SFR                   00000000   00000010  00000000  00000010  RWIX
+  PERIPHERALS_8BIT      00000010   000000f0  00000000  000000f0  RWIX
+  PERIPHERALS_16BIT     00000100   00000100  00000000  00000100  RWIX
+  INFOA                 00001800   00000200  00000000  00000200  RWIX
+  RAM                   00002000   00000800  000000a0  00000760  RWIX
+  FRAM                  0000c400   00003b80  00000112  00003a6e  RWIX
+  JTAGSIGNATURE         0000ff80   00000004  00000004  00000000  RWIX  ffff 
+  BSLSIGNATURE          0000ff84   00000004  00000004  00000000  RWIX  ffff 
+  INT00                 0000ff88   00000002  00000000  00000002  RWIX
+  INT01                 0000ff8a   00000002  00000000  00000002  RWIX
+  INT02                 0000ff8c   00000002  00000000  00000002  RWIX
+  INT03                 0000ff8e   00000002  00000000  00000002  RWIX
+  INT04                 0000ff90   00000002  00000000  00000002  RWIX
+  INT05                 0000ff92   00000002  00000000  00000002  RWIX
+  INT06                 0000ff94   00000002  00000000  00000002  RWIX
+  INT07                 0000ff96   00000002  00000000  00000002  RWIX
+  INT08                 0000ff98   00000002  00000000  00000002  RWIX
+  INT09                 0000ff9a   00000002  00000000  00000002  RWIX
+  INT10                 0000ff9c   00000002  00000000  00000002  RWIX
+  INT11                 0000ff9e   00000002  00000000  00000002  RWIX
+  INT12                 0000ffa0   00000002  00000000  00000002  RWIX
+  INT13                 0000ffa2   00000002  00000000  00000002  RWIX
+  INT14                 0000ffa4   00000002  00000000  00000002  RWIX
+  INT15                 0000ffa6   00000002  00000000  00000002  RWIX
+  INT16                 0000ffa8   00000002  00000000  00000002  RWIX
+  INT17                 0000ffaa   00000002  00000000  00000002  RWIX
+  INT18                 0000ffac   00000002  00000000  00000002  RWIX
+  INT19                 0000ffae   00000002  00000000  00000002  RWIX
+  INT20                 0000ffb0   00000002  00000000  00000002  RWIX
+  INT21                 0000ffb2   00000002  00000000  00000002  RWIX
+  INT22                 0000ffb4   00000002  00000000  00000002  RWIX
+  INT23                 0000ffb6   00000002  00000000  00000002  RWIX
+  INT24                 0000ffb8   00000002  00000000  00000002  RWIX
+  INT25                 0000ffba   00000002  00000000  00000002  RWIX
+  INT26                 0000ffbc   00000002  00000000  00000002  RWIX
+  INT27                 0000ffbe   00000002  00000000  00000002  RWIX
+  INT28                 0000ffc0   00000002  00000000  00000002  RWIX
+  INT29                 0000ffc2   00000002  00000000  00000002  RWIX
+  INT30                 0000ffc4   00000002  00000000  00000002  RWIX
+  INT31                 0000ffc6   00000002  00000000  00000002  RWIX
+  INT32                 0000ffc8   00000002  00000000  00000002  RWIX
+  INT33                 0000ffca   00000002  00000000  00000002  RWIX
+  INT34                 0000ffcc   00000002  00000000  00000002  RWIX
+  INT35                 0000ffce   00000002  00000000  00000002  RWIX
+  INT36                 0000ffd0   00000002  00000000  00000002  RWIX
+  INT37                 0000ffd2   00000002  00000000  00000002  RWIX
+  INT38                 0000ffd4   00000002  00000000  00000002  RWIX
+  INT39                 0000ffd6   00000002  00000000  00000002  RWIX
+  INT40                 0000ffd8   00000002  00000000  00000002  RWIX
+  INT41                 0000ffda   00000002  00000000  00000002  RWIX
+  INT42                 0000ffdc   00000002  00000000  00000002  RWIX
+  INT43                 0000ffde   00000002  00000000  00000002  RWIX
+  INT44                 0000ffe0   00000002  00000000  00000002  RWIX
+  INT45                 0000ffe2   00000002  00000002  00000000  RWIX
+  INT46                 0000ffe4   00000002  00000002  00000000  RWIX
+  INT47                 0000ffe6   00000002  00000002  00000000  RWIX
+  INT48                 0000ffe8   00000002  00000002  00000000  RWIX
+  INT49                 0000ffea   00000002  00000002  00000000  RWIX
+  INT50                 0000ffec   00000002  00000002  00000000  RWIX
+  INT51                 0000ffee   00000002  00000002  00000000  RWIX
+  INT52                 0000fff0   00000002  00000002  00000000  RWIX
+  INT53                 0000fff2   00000002  00000002  00000000  RWIX
+  INT54                 0000fff4   00000002  00000002  00000000  RWIX
+  INT55                 0000fff6   00000002  00000002  00000000  RWIX
+  INT56                 0000fff8   00000002  00000002  00000000  RWIX
+  INT57                 0000fffa   00000002  00000002  00000000  RWIX
+  INT58                 0000fffc   00000002  00000002  00000000  RWIX
+  RESET                 0000fffe   00000002  00000002  00000000  RWIX
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.TI.persistent 
+*          0    0000c400    00000000     UNINITIALIZED
+
+.cinit     0    0000c400    00000000     UNINITIALIZED
+
+.pinit     0    0000c400    00000000     UNINITIALIZED
+
+.binit     0    0000c400    00000000     
+
+.init_array 
+*          0    0000c400    00000000     UNINITIALIZED
+
+.mspabi.exidx 
+*          0    0000c400    00000000     UNINITIALIZED
+
+.mspabi.extab 
+*          0    0000c400    00000000     UNINITIALIZED
+
+.const     0    0000c400    0000005c     
+                  0000c400    0000005c     main.obj (.const:$P$T0$1)
+
+.text      0    0000c45c    000000b6     
+                  0000c45c    0000007e     main.obj (.text:main)
+                  0000c4da    00000014     rts430x_lc_sd_eabi.lib : boot.c.obj (.text:_isr:_c_int00_noinit_noargs)
+                  0000c4ee    00000012                            : memcpy.c.obj (.text:memcpy)
+                  0000c500    00000008                            : isr_trap.asm.obj (.text:_isr:__TI_ISR_TRAP)
+                  0000c508    00000006                            : exit.c.obj (.text:abort)
+                  0000c50e    00000004                            : pre_init.c.obj (.text:_system_pre_init)
+
+.stack     0    00002760    000000a0     UNINITIALIZED
+                  00002760    00000002     rts430x_lc_sd_eabi.lib : boot.c.obj (.stack)
+                  00002762    0000009e     --HOLE--
+
+LCD_E      0    0000ffe2    00000002     
+                  0000ffe2    00000002     rts430x_lc_sd_eabi.lib : int45.asm.obj (.int45)
+
+PORT2      0    0000ffe4    00000002     
+                  0000ffe4    00000002     rts430x_lc_sd_eabi.lib : int46.asm.obj (.int46)
+
+PORT1      0    0000ffe6    00000002     
+                  0000ffe6    00000002     rts430x_lc_sd_eabi.lib : int47.asm.obj (.int47)
+
+ADC        0    0000ffe8    00000002     
+                  0000ffe8    00000002     rts430x_lc_sd_eabi.lib : int48.asm.obj (.int48)
+
+USCI_B0    0    0000ffea    00000002     
+                  0000ffea    00000002     rts430x_lc_sd_eabi.lib : int49.asm.obj (.int49)
+
+USCI_A0    0    0000ffec    00000002     
+                  0000ffec    00000002     rts430x_lc_sd_eabi.lib : int50.asm.obj (.int50)
+
+WDT        0    0000ffee    00000002     
+                  0000ffee    00000002     rts430x_lc_sd_eabi.lib : int51.asm.obj (.int51)
+
+RTC        0    0000fff0    00000002     
+                  0000fff0    00000002     rts430x_lc_sd_eabi.lib : int52.asm.obj (.int52)
+
+TIMER1_A1 
+*          0    0000fff2    00000002     
+                  0000fff2    00000002     rts430x_lc_sd_eabi.lib : int53.asm.obj (.int53)
+
+TIMER1_A0 
+*          0    0000fff4    00000002     
+                  0000fff4    00000002     rts430x_lc_sd_eabi.lib : int54.asm.obj (.int54)
+
+TIMER0_A1 
+*          0    0000fff6    00000002     
+                  0000fff6    00000002     rts430x_lc_sd_eabi.lib : int55.asm.obj (.int55)
+
+TIMER0_A0 
+*          0    0000fff8    00000002     
+                  0000fff8    00000002     rts430x_lc_sd_eabi.lib : int56.asm.obj (.int56)
+
+UNMI       0    0000fffa    00000002     
+                  0000fffa    00000002     rts430x_lc_sd_eabi.lib : int57.asm.obj (.int57)
+
+SYSNMI     0    0000fffc    00000002     
+                  0000fffc    00000002     rts430x_lc_sd_eabi.lib : int58.asm.obj (.int58)
+
+.reset     0    0000fffe    00000002     
+                  0000fffe    00000002     rts430x_lc_sd_eabi.lib : boot.c.obj (.reset)
+
+$fill000   0    0000ff80    00000004     
+                  0000ff80    00000004     --HOLE-- [fill = ffff]
+
+$fill001   0    0000ff84    00000004     
+                  0000ff84    00000004     --HOLE-- [fill = ffff]
+
+MODULE SUMMARY
+
+       Module             code   ro data   rw data
+       ------             ----   -------   -------
+    .\
+       main.obj           126    92        0      
+    +--+------------------+------+---------+---------+
+       Total:             126    92        0      
+                                                  
+    C:\ti\ccs1011\ccs\tools\compiler\ti-cgt-msp430_20.2.4.LTS\lib\rts430x_lc_sd_eabi.lib
+       boot.c.obj         20     2         0      
+       memcpy.c.obj       18     0         0      
+       isr_trap.asm.obj   8      0         0      
+       exit.c.obj         6      0         0      
+       pre_init.c.obj     4      0         0      
+       int45.asm.obj      0      2         0      
+       int46.asm.obj      0      2         0      
+       int47.asm.obj      0      2         0      
+       int48.asm.obj      0      2         0      
+       int49.asm.obj      0      2         0      
+       int50.asm.obj      0      2         0      
+       int51.asm.obj      0      2         0      
+       int52.asm.obj      0      2         0      
+       int53.asm.obj      0      2         0      
+       int54.asm.obj      0      2         0      
+       int55.asm.obj      0      2         0      
+       int56.asm.obj      0      2         0      
+       int57.asm.obj      0      2         0      
+       int58.asm.obj      0      2         0      
+    +--+------------------+------+---------+---------+
+       Total:             56     30        0      
+                                                  
+       Stack:             0      0         160    
+    +--+------------------+------+---------+---------+
+       Grand Total:       182    122       160    
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address   name                  
+-------   ----                  
+00000700  ADCCTL0               
+00000701  ADCCTL0_H             
+00000700  ADCCTL0_L             
+00000702  ADCCTL1               
+00000703  ADCCTL1_H             
+00000702  ADCCTL1_L             
+00000704  ADCCTL2               
+00000705  ADCCTL2_H             
+00000704  ADCCTL2_L             
+00000708  ADCHI                 
+00000709  ADCHI_H               
+00000708  ADCHI_L               
+0000071a  ADCIE                 
+0000071b  ADCIE_H               
+0000071a  ADCIE_L               
+0000071c  ADCIFG                
+0000071d  ADCIFG_H              
+0000071c  ADCIFG_L              
+0000071e  ADCIV                 
+0000071f  ADCIV_H               
+0000071e  ADCIV_L               
+00000706  ADCLO                 
+00000707  ADCLO_H               
+00000706  ADCLO_L               
+0000070a  ADCMCTL0              
+0000070b  ADCMCTL0_H            
+0000070a  ADCMCTL0_L            
+00000712  ADCMEM0               
+00000713  ADCMEM0_H             
+00000712  ADCMEM0_L             
+00000660  BAKMEM0               
+00000661  BAKMEM0_H             
+00000660  BAKMEM0_L             
+00000662  BAKMEM1               
+00000674  BAKMEM10              
+00000675  BAKMEM10_H            
+00000674  BAKMEM10_L            
+00000676  BAKMEM11              
+00000677  BAKMEM11_H            
+00000676  BAKMEM11_L            
+00000678  BAKMEM12              
+00000679  BAKMEM12_H            
+00000678  BAKMEM12_L            
+0000067a  BAKMEM13              
+0000067b  BAKMEM13_H            
+0000067a  BAKMEM13_L            
+0000067c  BAKMEM14              
+0000067d  BAKMEM14_H            
+0000067c  BAKMEM14_L            
+0000067e  BAKMEM15              
+0000067f  BAKMEM15_H            
+0000067e  BAKMEM15_L            
+00000663  BAKMEM1_H             
+00000662  BAKMEM1_L             
+00000664  BAKMEM2               
+00000665  BAKMEM2_H             
+00000664  BAKMEM2_L             
+00000666  BAKMEM3               
+00000667  BAKMEM3_H             
+00000666  BAKMEM3_L             
+00000668  BAKMEM4               
+00000669  BAKMEM4_H             
+00000668  BAKMEM4_L             
+0000066a  BAKMEM5               
+0000066b  BAKMEM5_H             
+0000066a  BAKMEM5_L             
+0000066c  BAKMEM6               
+0000066d  BAKMEM6_H             
+0000066c  BAKMEM6_L             
+0000066e  BAKMEM7               
+0000066f  BAKMEM7_H             
+0000066e  BAKMEM7_L             
+00000670  BAKMEM8               
+00000671  BAKMEM8_H             
+00000670  BAKMEM8_L             
+00000672  BAKMEM9               
+00000673  BAKMEM9_H             
+00000672  BAKMEM9_L             
+0000c508  C$$EXIT               
+000002ee  CAPTIO0CTL            
+000002ef  CAPTIO0CTL_H          
+000002ee  CAPTIO0CTL_L          
+000001c0  CRCDI                 
+000001c2  CRCDIRB               
+000001c3  CRCDIRB_H             
+000001c2  CRCDIRB_L             
+000001c1  CRCDI_H               
+000001c0  CRCDI_L               
+000001c4  CRCINIRES             
+000001c5  CRCINIRES_H           
+000001c4  CRCINIRES_L           
+000001c6  CRCRESR               
+000001c7  CRCRESR_H             
+000001c6  CRCRESR_L             
+00000180  CSCTL0                
+00000181  CSCTL0_H              
+00000180  CSCTL0_L              
+00000182  CSCTL1                
+00000183  CSCTL1_H              
+00000182  CSCTL1_L              
+00000184  CSCTL2                
+00000185  CSCTL2_H              
+00000184  CSCTL2_L              
+00000186  CSCTL3                
+00000187  CSCTL3_H              
+00000186  CSCTL3_L              
+00000188  CSCTL4                
+00000189  CSCTL4_H              
+00000188  CSCTL4_L              
+0000018a  CSCTL5                
+0000018b  CSCTL5_H              
+0000018a  CSCTL5_L              
+0000018c  CSCTL6                
+0000018d  CSCTL6_H              
+0000018c  CSCTL6_L              
+0000018e  CSCTL7                
+0000018f  CSCTL7_H              
+0000018e  CSCTL7_L              
+00000190  CSCTL8                
+00000191  CSCTL8_H              
+00000190  CSCTL8_L              
+000001a0  FRCTL0                
+000001a1  FRCTL0_H              
+000001a0  FRCTL0_L              
+000001a4  GCCTL0                
+000001a5  GCCTL0_H              
+000001a4  GCCTL0_L              
+000001a6  GCCTL1                
+000001a7  GCCTL1_H              
+000001a6  GCCTL1_L              
+00000604  LCDBLKCTL             
+00000605  LCDBLKCTL_H           
+00000604  LCDBLKCTL_L           
+00000640  LCDBM0W               
+00000641  LCDBM0W_H             
+00000640  LCDBM0W_L             
+0000064a  LCDBM10W              
+0000064b  LCDBM10W_H            
+0000064a  LCDBM10W_L            
+0000064c  LCDBM12W              
+0000064d  LCDBM12W_H            
+0000064c  LCDBM12W_L            
+0000064e  LCDBM14W              
+0000064f  LCDBM14W_H            
+0000064e  LCDBM14W_L            
+00000650  LCDBM16W              
+00000651  LCDBM16W_H            
+00000650  LCDBM16W_L            
+00000652  LCDBM18W              
+00000653  LCDBM18W_H            
+00000652  LCDBM18W_L            
+00000642  LCDBM2W               
+00000643  LCDBM2W_H             
+00000642  LCDBM2W_L             
+00000644  LCDBM4W               
+00000645  LCDBM4W_H             
+00000644  LCDBM4W_L             
+00000646  LCDBM6W               
+00000647  LCDBM6W_H             
+00000646  LCDBM6W_L             
+00000648  LCDBM8W               
+00000649  LCDBM8W_H             
+00000648  LCDBM8W_L             
+00000614  LCDCSSEL0             
+00000615  LCDCSSEL0_H           
+00000614  LCDCSSEL0_L           
+00000616  LCDCSSEL1             
+00000617  LCDCSSEL1_H           
+00000616  LCDCSSEL1_L           
+00000618  LCDCSSEL2             
+00000619  LCDCSSEL2_H           
+00000618  LCDCSSEL2_L           
+00000600  LCDCTL0               
+00000601  LCDCTL0_H             
+00000600  LCDCTL0_L             
+00000602  LCDCTL1               
+00000603  LCDCTL1_H             
+00000602  LCDCTL1_L             
+0000061e  LCDIV                 
+00000620  LCDM0W                
+00000621  LCDM0W_H              
+00000620  LCDM0W_L              
+0000062a  LCDM10W               
+0000062b  LCDM10W_H             
+0000062a  LCDM10W_L             
+0000062c  LCDM12W               
+0000062d  LCDM12W_H             
+0000062c  LCDM12W_L             
+0000062e  LCDM14W               
+0000062f  LCDM14W_H             
+0000062e  LCDM14W_L             
+00000630  LCDM16W               
+00000631  LCDM16W_H             
+00000630  LCDM16W_L             
+00000632  LCDM18W               
+00000633  LCDM18W_H             
+00000632  LCDM18W_L             
+00000634  LCDM20W               
+00000635  LCDM20W_H             
+00000634  LCDM20W_L             
+00000636  LCDM22W               
+00000637  LCDM22W_H             
+00000636  LCDM22W_L             
+00000638  LCDM24W               
+00000639  LCDM24W_H             
+00000638  LCDM24W_L             
+0000063a  LCDM26W               
+0000063b  LCDM26W_H             
+0000063a  LCDM26W_L             
+0000063c  LCDM28W               
+0000063d  LCDM28W_H             
+0000063c  LCDM28W_L             
+00000622  LCDM2W                
+00000623  LCDM2W_H              
+00000622  LCDM2W_L              
+0000063e  LCDM30W               
+0000063f  LCDM30W_H             
+0000063e  LCDM30W_L             
+00000640  LCDM32W               
+00000641  LCDM32W_H             
+00000640  LCDM32W_L             
+00000642  LCDM34W               
+00000643  LCDM34W_H             
+00000642  LCDM34W_L             
+00000644  LCDM36W               
+00000645  LCDM36W_H             
+00000644  LCDM36W_L             
+00000646  LCDM38W               
+00000647  LCDM38W_H             
+00000646  LCDM38W_L             
+00000624  LCDM4W                
+00000625  LCDM4W_H              
+00000624  LCDM4W_L              
+00000626  LCDM6W                
+00000627  LCDM6W_H              
+00000626  LCDM6W_L              
+00000628  LCDM8W                
+00000629  LCDM8W_H              
+00000628  LCDM8W_L              
+00000606  LCDMEMCTL             
+00000607  LCDMEMCTL_H           
+00000606  LCDMEMCTL_L           
+0000060a  LCDPCTL0              
+0000060b  LCDPCTL0_H            
+0000060a  LCDPCTL0_L            
+0000060c  LCDPCTL1              
+0000060d  LCDPCTL1_H            
+0000060c  LCDPCTL1_L            
+0000060e  LCDPCTL2              
+0000060f  LCDPCTL2_H            
+0000060e  LCDPCTL2_L            
+00000608  LCDVCTL               
+00000609  LCDVCTL_H             
+00000608  LCDVCTL_L             
+0000020e  P1IV                  
+0000021e  P2IV                  
+00000204  PADIR                 
+00000205  PADIR_H               
+00000204  PADIR_L               
+0000021a  PAIE                  
+00000218  PAIES                 
+00000219  PAIES_H               
+00000218  PAIES_L               
+0000021b  PAIE_H                
+0000021a  PAIE_L                
+0000021c  PAIFG                 
+0000021d  PAIFG_H               
+0000021c  PAIFG_L               
+00000200  PAIN                  
+00000201  PAIN_H                
+00000200  PAIN_L                
+00000202  PAOUT                 
+00000203  PAOUT_H               
+00000202  PAOUT_L               
+00000206  PAREN                 
+00000207  PAREN_H               
+00000206  PAREN_L               
+0000020a  PASEL0                
+0000020b  PASEL0_H              
+0000020a  PASEL0_L              
+00000224  PBDIR                 
+00000225  PBDIR_H               
+00000224  PBDIR_L               
+00000220  PBIN                  
+00000221  PBIN_H                
+00000220  PBIN_L                
+00000222  PBOUT                 
+00000223  PBOUT_H               
+00000222  PBOUT_L               
+00000226  PBREN                 
+00000227  PBREN_H               
+00000226  PBREN_L               
+0000022a  PBSEL0                
+0000022b  PBSEL0_H              
+0000022a  PBSEL0_L              
+00000244  PCDIR                 
+00000245  PCDIR_H               
+00000244  PCDIR_L               
+00000240  PCIN                  
+00000241  PCIN_H                
+00000240  PCIN_L                
+00000242  PCOUT                 
+00000243  PCOUT_H               
+00000242  PCOUT_L               
+00000246  PCREN                 
+00000247  PCREN_H               
+00000246  PCREN_L               
+0000024a  PCSEL0                
+0000024b  PCSEL0_H              
+0000024a  PCSEL0_L              
+00000264  PDDIR                 
+00000265  PDDIR_H               
+00000264  PDDIR_L               
+00000260  PDIN                  
+00000261  PDIN_H                
+00000260  PDIN_L                
+00000262  PDOUT                 
+00000263  PDOUT_H               
+00000262  PDOUT_L               
+00000266  PDREN                 
+00000267  PDREN_H               
+00000266  PDREN_L               
+0000026a  PDSEL0                
+0000026b  PDSEL0_H              
+0000026a  PDSEL0_L              
+00000130  PM5CTL0               
+00000131  PM5CTL0_H             
+00000130  PM5CTL0_L             
+00000120  PMMCTL0               
+00000121  PMMCTL0_H             
+00000120  PMMCTL0_L             
+00000122  PMMCTL1               
+00000123  PMMCTL1_H             
+00000122  PMMCTL1_L             
+00000124  PMMCTL2               
+00000125  PMMCTL2_H             
+00000124  PMMCTL2_L             
+0000012e  PMMIE                 
+0000012f  PMMIE_H               
+0000012e  PMMIE_L               
+0000012a  PMMIFG                
+0000012b  PMMIFG_H              
+0000012a  PMMIFG_L              
+000003cc  RTCCNT                
+000003cd  RTCCNT_H              
+000003cc  RTCCNT_L              
+000003c0  RTCCTL                
+000003c1  RTCCTL_H              
+000003c0  RTCCTL_L              
+000003c4  RTCIV                 
+000003c5  RTCIV_H               
+000003c4  RTCIV_L               
+000003c8  RTCMOD                
+000003c9  RTCMOD_H              
+000003c8  RTCMOD_L              
+00000100  SFRIE1                
+00000101  SFRIE1_H              
+00000100  SFRIE1_L              
+00000102  SFRIFG1               
+00000103  SFRIFG1_H             
+00000102  SFRIFG1_L             
+00000104  SFRRPCR               
+00000105  SFRRPCR_H             
+00000104  SFRRPCR_L             
+00000158  SYSBERRIV             
+00000159  SYSBERRIV_H           
+00000158  SYSBERRIV_L           
+00000142  SYSBSLC               
+00000143  SYSBSLC_H             
+00000142  SYSBSLC_L             
+00000160  SYSCFG0               
+00000161  SYSCFG0_H             
+00000160  SYSCFG0_L             
+00000162  SYSCFG1               
+00000163  SYSCFG1_H             
+00000162  SYSCFG1_L             
+00000164  SYSCFG2               
+00000165  SYSCFG2_H             
+00000164  SYSCFG2_L             
+00000140  SYSCTL                
+00000141  SYSCTL_H              
+00000140  SYSCTL_L              
+00000146  SYSJMBC               
+00000147  SYSJMBC_H             
+00000146  SYSJMBC_L             
+00000148  SYSJMBI0              
+00000149  SYSJMBI0_H            
+00000148  SYSJMBI0_L            
+0000014a  SYSJMBI1              
+0000014b  SYSJMBI1_H            
+0000014a  SYSJMBI1_L            
+0000014c  SYSJMBO0              
+0000014d  SYSJMBO0_H            
+0000014c  SYSJMBO0_L            
+0000014e  SYSJMBO1              
+0000014f  SYSJMBO1_H            
+0000014e  SYSJMBO1_L            
+0000015e  SYSRSTIV              
+0000015f  SYSRSTIV_H            
+0000015e  SYSRSTIV_L            
+0000015c  SYSSNIV               
+0000015d  SYSSNIV_H             
+0000015c  SYSSNIV_L             
+0000015a  SYSUNIV               
+0000015b  SYSUNIV_H             
+0000015a  SYSUNIV_L             
+00000312  TA0CCR0               
+00000314  TA0CCR1               
+00000316  TA0CCR2               
+00000302  TA0CCTL0              
+00000304  TA0CCTL1              
+00000306  TA0CCTL2              
+00000300  TA0CTL                
+00000320  TA0EX0                
+0000032e  TA0IV                 
+00000310  TA0R                  
+00000352  TA1CCR0               
+00000354  TA1CCR1               
+00000356  TA1CCR2               
+00000342  TA1CCTL0              
+00000344  TA1CCTL1              
+00000346  TA1CCTL2              
+00000340  TA1CTL                
+00000360  TA1EX0                
+0000036e  TA1IV                 
+00000350  TA1R                  
+00000510  UCA0ABCTL             
+00000506  UCA0BRW               
+00000507  UCA0BRW_H             
+00000506  UCA0BRW_L             
+00000500  UCA0CTLW0             
+00000501  UCA0CTLW0_H           
+00000500  UCA0CTLW0_L           
+00000502  UCA0CTLW1             
+00000503  UCA0CTLW1_H           
+00000502  UCA0CTLW1_L           
+0000051a  UCA0IE                
+0000051b  UCA0IE_H              
+0000051a  UCA0IE_L              
+0000051c  UCA0IFG               
+0000051d  UCA0IFG_H             
+0000051c  UCA0IFG_L             
+00000512  UCA0IRCTL             
+00000513  UCA0IRCTL_H           
+00000512  UCA0IRCTL_L           
+0000051e  UCA0IV                
+00000508  UCA0MCTLW             
+00000509  UCA0MCTLW_H           
+00000508  UCA0MCTLW_L           
+0000050c  UCA0RXBUF             
+0000050d  UCA0RXBUF_H           
+0000050c  UCA0RXBUF_L           
+0000050a  UCA0STATW             
+0000050e  UCA0TXBUF             
+0000050f  UCA0TXBUF_H           
+0000050e  UCA0TXBUF_L           
+0000055e  UCB0ADDMASK           
+0000055f  UCB0ADDMASK_H         
+0000055e  UCB0ADDMASK_L         
+0000055c  UCB0ADDRX             
+0000055d  UCB0ADDRX_H           
+0000055c  UCB0ADDRX_L           
+00000546  UCB0BRW               
+00000547  UCB0BRW_H             
+00000546  UCB0BRW_L             
+00000540  UCB0CTLW0             
+00000541  UCB0CTLW0_H           
+00000540  UCB0CTLW0_L           
+00000542  UCB0CTLW1             
+00000543  UCB0CTLW1_H           
+00000542  UCB0CTLW1_L           
+00000554  UCB0I2COA0            
+00000555  UCB0I2COA0_H          
+00000554  UCB0I2COA0_L          
+00000556  UCB0I2COA1            
+00000557  UCB0I2COA1_H          
+00000556  UCB0I2COA1_L          
+00000558  UCB0I2COA2            
+00000559  UCB0I2COA2_H          
+00000558  UCB0I2COA2_L          
+0000055a  UCB0I2COA3            
+0000055b  UCB0I2COA3_H          
+0000055a  UCB0I2COA3_L          
+00000560  UCB0I2CSA             
+00000561  UCB0I2CSA_H           
+00000560  UCB0I2CSA_L           
+0000056a  UCB0IE                
+0000056b  UCB0IE_H              
+0000056a  UCB0IE_L              
+0000056c  UCB0IFG               
+0000056d  UCB0IFG_H             
+0000056c  UCB0IFG_L             
+0000056e  UCB0IV                
+0000054c  UCB0RXBUF             
+0000054d  UCB0RXBUF_H           
+0000054c  UCB0RXBUF_L           
+00000548  UCB0STATW             
+00000549  UCB0STATW_H           
+00000548  UCB0STATW_L           
+0000054a  UCB0TBCNT             
+0000054b  UCB0TBCNT_H           
+0000054a  UCB0TBCNT_L           
+0000054e  UCB0TXBUF             
+0000054f  UCB0TXBUF_H           
+0000054e  UCB0TXBUF_L           
+000001cc  WDTCTL                
+000001cd  WDTCTL_H              
+000001cc  WDTCTL_L              
+00002800  __STACK_END           
+000000a0  __STACK_SIZE          
+0000c500  __TI_ISR_TRAP         
+0000ffe2  __TI_int45            
+0000ffe4  __TI_int46            
+0000ffe6  __TI_int47            
+0000ffe8  __TI_int48            
+0000ffea  __TI_int49            
+0000ffec  __TI_int50            
+0000ffee  __TI_int51            
+0000fff0  __TI_int52            
+0000fff2  __TI_int53            
+0000fff4  __TI_int54            
+0000fff6  __TI_int55            
+0000fff8  __TI_int56            
+0000fffa  __TI_int57            
+0000fffc  __TI_int58            
+ffffffff  __TI_pprof_out_hndl   
+ffffffff  __TI_prof_data_size   
+ffffffff  __TI_prof_data_start  
+ffffffff  __c_args__            
+0000c4da  _c_int00_noinit_noargs
+0000fffe  _reset_vector         
+00002760  _stack                
+0000c50e  _system_pre_init      
+0000c508  abort                 
+0000c45c  main                  
+0000c4ee  memcpy                
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address   name                  
+-------   ----                  
+000000a0  __STACK_SIZE          
+00000100  SFRIE1                
+00000100  SFRIE1_L              
+00000101  SFRIE1_H              
+00000102  SFRIFG1               
+00000102  SFRIFG1_L             
+00000103  SFRIFG1_H             
+00000104  SFRRPCR               
+00000104  SFRRPCR_L             
+00000105  SFRRPCR_H             
+00000120  PMMCTL0               
+00000120  PMMCTL0_L             
+00000121  PMMCTL0_H             
+00000122  PMMCTL1               
+00000122  PMMCTL1_L             
+00000123  PMMCTL1_H             
+00000124  PMMCTL2               
+00000124  PMMCTL2_L             
+00000125  PMMCTL2_H             
+0000012a  PMMIFG                
+0000012a  PMMIFG_L              
+0000012b  PMMIFG_H              
+0000012e  PMMIE                 
+0000012e  PMMIE_L               
+0000012f  PMMIE_H               
+00000130  PM5CTL0               
+00000130  PM5CTL0_L             
+00000131  PM5CTL0_H             
+00000140  SYSCTL                
+00000140  SYSCTL_L              
+00000141  SYSCTL_H              
+00000142  SYSBSLC               
+00000142  SYSBSLC_L             
+00000143  SYSBSLC_H             
+00000146  SYSJMBC               
+00000146  SYSJMBC_L             
+00000147  SYSJMBC_H             
+00000148  SYSJMBI0              
+00000148  SYSJMBI0_L            
+00000149  SYSJMBI0_H            
+0000014a  SYSJMBI1              
+0000014a  SYSJMBI1_L            
+0000014b  SYSJMBI1_H            
+0000014c  SYSJMBO0              
+0000014c  SYSJMBO0_L            
+0000014d  SYSJMBO0_H            
+0000014e  SYSJMBO1              
+0000014e  SYSJMBO1_L            
+0000014f  SYSJMBO1_H            
+00000158  SYSBERRIV             
+00000158  SYSBERRIV_L           
+00000159  SYSBERRIV_H           
+0000015a  SYSUNIV               
+0000015a  SYSUNIV_L             
+0000015b  SYSUNIV_H             
+0000015c  SYSSNIV               
+0000015c  SYSSNIV_L             
+0000015d  SYSSNIV_H             
+0000015e  SYSRSTIV              
+0000015e  SYSRSTIV_L            
+0000015f  SYSRSTIV_H            
+00000160  SYSCFG0               
+00000160  SYSCFG0_L             
+00000161  SYSCFG0_H             
+00000162  SYSCFG1               
+00000162  SYSCFG1_L             
+00000163  SYSCFG1_H             
+00000164  SYSCFG2               
+00000164  SYSCFG2_L             
+00000165  SYSCFG2_H             
+00000180  CSCTL0                
+00000180  CSCTL0_L              
+00000181  CSCTL0_H              
+00000182  CSCTL1                
+00000182  CSCTL1_L              
+00000183  CSCTL1_H              
+00000184  CSCTL2                
+00000184  CSCTL2_L              
+00000185  CSCTL2_H              
+00000186  CSCTL3                
+00000186  CSCTL3_L              
+00000187  CSCTL3_H              
+00000188  CSCTL4                
+00000188  CSCTL4_L              
+00000189  CSCTL4_H              
+0000018a  CSCTL5                
+0000018a  CSCTL5_L              
+0000018b  CSCTL5_H              
+0000018c  CSCTL6                
+0000018c  CSCTL6_L              
+0000018d  CSCTL6_H              
+0000018e  CSCTL7                
+0000018e  CSCTL7_L              
+0000018f  CSCTL7_H              
+00000190  CSCTL8                
+00000190  CSCTL8_L              
+00000191  CSCTL8_H              
+000001a0  FRCTL0                
+000001a0  FRCTL0_L              
+000001a1  FRCTL0_H              
+000001a4  GCCTL0                
+000001a4  GCCTL0_L              
+000001a5  GCCTL0_H              
+000001a6  GCCTL1                
+000001a6  GCCTL1_L              
+000001a7  GCCTL1_H              
+000001c0  CRCDI                 
+000001c0  CRCDI_L               
+000001c1  CRCDI_H               
+000001c2  CRCDIRB               
+000001c2  CRCDIRB_L             
+000001c3  CRCDIRB_H             
+000001c4  CRCINIRES             
+000001c4  CRCINIRES_L           
+000001c5  CRCINIRES_H           
+000001c6  CRCRESR               
+000001c6  CRCRESR_L             
+000001c7  CRCRESR_H             
+000001cc  WDTCTL                
+000001cc  WDTCTL_L              
+000001cd  WDTCTL_H              
+00000200  PAIN                  
+00000200  PAIN_L                
+00000201  PAIN_H                
+00000202  PAOUT                 
+00000202  PAOUT_L               
+00000203  PAOUT_H               
+00000204  PADIR                 
+00000204  PADIR_L               
+00000205  PADIR_H               
+00000206  PAREN                 
+00000206  PAREN_L               
+00000207  PAREN_H               
+0000020a  PASEL0                
+0000020a  PASEL0_L              
+0000020b  PASEL0_H              
+0000020e  P1IV                  
+00000218  PAIES                 
+00000218  PAIES_L               
+00000219  PAIES_H               
+0000021a  PAIE                  
+0000021a  PAIE_L                
+0000021b  PAIE_H                
+0000021c  PAIFG                 
+0000021c  PAIFG_L               
+0000021d  PAIFG_H               
+0000021e  P2IV                  
+00000220  PBIN                  
+00000220  PBIN_L                
+00000221  PBIN_H                
+00000222  PBOUT                 
+00000222  PBOUT_L               
+00000223  PBOUT_H               
+00000224  PBDIR                 
+00000224  PBDIR_L               
+00000225  PBDIR_H               
+00000226  PBREN                 
+00000226  PBREN_L               
+00000227  PBREN_H               
+0000022a  PBSEL0                
+0000022a  PBSEL0_L              
+0000022b  PBSEL0_H              
+00000240  PCIN                  
+00000240  PCIN_L                
+00000241  PCIN_H                
+00000242  PCOUT                 
+00000242  PCOUT_L               
+00000243  PCOUT_H               
+00000244  PCDIR                 
+00000244  PCDIR_L               
+00000245  PCDIR_H               
+00000246  PCREN                 
+00000246  PCREN_L               
+00000247  PCREN_H               
+0000024a  PCSEL0                
+0000024a  PCSEL0_L              
+0000024b  PCSEL0_H              
+00000260  PDIN                  
+00000260  PDIN_L                
+00000261  PDIN_H                
+00000262  PDOUT                 
+00000262  PDOUT_L               
+00000263  PDOUT_H               
+00000264  PDDIR                 
+00000264  PDDIR_L               
+00000265  PDDIR_H               
+00000266  PDREN                 
+00000266  PDREN_L               
+00000267  PDREN_H               
+0000026a  PDSEL0                
+0000026a  PDSEL0_L              
+0000026b  PDSEL0_H              
+000002ee  CAPTIO0CTL            
+000002ee  CAPTIO0CTL_L          
+000002ef  CAPTIO0CTL_H          
+00000300  TA0CTL                
+00000302  TA0CCTL0              
+00000304  TA0CCTL1              
+00000306  TA0CCTL2              
+00000310  TA0R                  
+00000312  TA0CCR0               
+00000314  TA0CCR1               
+00000316  TA0CCR2               
+00000320  TA0EX0                
+0000032e  TA0IV                 
+00000340  TA1CTL                
+00000342  TA1CCTL0              
+00000344  TA1CCTL1              
+00000346  TA1CCTL2              
+00000350  TA1R                  
+00000352  TA1CCR0               
+00000354  TA1CCR1               
+00000356  TA1CCR2               
+00000360  TA1EX0                
+0000036e  TA1IV                 
+000003c0  RTCCTL                
+000003c0  RTCCTL_L              
+000003c1  RTCCTL_H              
+000003c4  RTCIV                 
+000003c4  RTCIV_L               
+000003c5  RTCIV_H               
+000003c8  RTCMOD                
+000003c8  RTCMOD_L              
+000003c9  RTCMOD_H              
+000003cc  RTCCNT                
+000003cc  RTCCNT_L              
+000003cd  RTCCNT_H              
+00000500  UCA0CTLW0             
+00000500  UCA0CTLW0_L           
+00000501  UCA0CTLW0_H           
+00000502  UCA0CTLW1             
+00000502  UCA0CTLW1_L           
+00000503  UCA0CTLW1_H           
+00000506  UCA0BRW               
+00000506  UCA0BRW_L             
+00000507  UCA0BRW_H             
+00000508  UCA0MCTLW             
+00000508  UCA0MCTLW_L           
+00000509  UCA0MCTLW_H           
+0000050a  UCA0STATW             
+0000050c  UCA0RXBUF             
+0000050c  UCA0RXBUF_L           
+0000050d  UCA0RXBUF_H           
+0000050e  UCA0TXBUF             
+0000050e  UCA0TXBUF_L           
+0000050f  UCA0TXBUF_H           
+00000510  UCA0ABCTL             
+00000512  UCA0IRCTL             
+00000512  UCA0IRCTL_L           
+00000513  UCA0IRCTL_H           
+0000051a  UCA0IE                
+0000051a  UCA0IE_L              
+0000051b  UCA0IE_H              
+0000051c  UCA0IFG               
+0000051c  UCA0IFG_L             
+0000051d  UCA0IFG_H             
+0000051e  UCA0IV                
+00000540  UCB0CTLW0             
+00000540  UCB0CTLW0_L           
+00000541  UCB0CTLW0_H           
+00000542  UCB0CTLW1             
+00000542  UCB0CTLW1_L           
+00000543  UCB0CTLW1_H           
+00000546  UCB0BRW               
+00000546  UCB0BRW_L             
+00000547  UCB0BRW_H             
+00000548  UCB0STATW             
+00000548  UCB0STATW_L           
+00000549  UCB0STATW_H           
+0000054a  UCB0TBCNT             
+0000054a  UCB0TBCNT_L           
+0000054b  UCB0TBCNT_H           
+0000054c  UCB0RXBUF             
+0000054c  UCB0RXBUF_L           
+0000054d  UCB0RXBUF_H           
+0000054e  UCB0TXBUF             
+0000054e  UCB0TXBUF_L           
+0000054f  UCB0TXBUF_H           
+00000554  UCB0I2COA0            
+00000554  UCB0I2COA0_L          
+00000555  UCB0I2COA0_H          
+00000556  UCB0I2COA1            
+00000556  UCB0I2COA1_L          
+00000557  UCB0I2COA1_H          
+00000558  UCB0I2COA2            
+00000558  UCB0I2COA2_L          
+00000559  UCB0I2COA2_H          
+0000055a  UCB0I2COA3            
+0000055a  UCB0I2COA3_L          
+0000055b  UCB0I2COA3_H          
+0000055c  UCB0ADDRX             
+0000055c  UCB0ADDRX_L           
+0000055d  UCB0ADDRX_H           
+0000055e  UCB0ADDMASK           
+0000055e  UCB0ADDMASK_L         
+0000055f  UCB0ADDMASK_H         
+00000560  UCB0I2CSA             
+00000560  UCB0I2CSA_L           
+00000561  UCB0I2CSA_H           
+0000056a  UCB0IE                
+0000056a  UCB0IE_L              
+0000056b  UCB0IE_H              
+0000056c  UCB0IFG               
+0000056c  UCB0IFG_L             
+0000056d  UCB0IFG_H             
+0000056e  UCB0IV                
+00000600  LCDCTL0               
+00000600  LCDCTL0_L             
+00000601  LCDCTL0_H             
+00000602  LCDCTL1               
+00000602  LCDCTL1_L             
+00000603  LCDCTL1_H             
+00000604  LCDBLKCTL             
+00000604  LCDBLKCTL_L           
+00000605  LCDBLKCTL_H           
+00000606  LCDMEMCTL             
+00000606  LCDMEMCTL_L           
+00000607  LCDMEMCTL_H           
+00000608  LCDVCTL               
+00000608  LCDVCTL_L             
+00000609  LCDVCTL_H             
+0000060a  LCDPCTL0              
+0000060a  LCDPCTL0_L            
+0000060b  LCDPCTL0_H            
+0000060c  LCDPCTL1              
+0000060c  LCDPCTL1_L            
+0000060d  LCDPCTL1_H            
+0000060e  LCDPCTL2              
+0000060e  LCDPCTL2_L            
+0000060f  LCDPCTL2_H            
+00000614  LCDCSSEL0             
+00000614  LCDCSSEL0_L           
+00000615  LCDCSSEL0_H           
+00000616  LCDCSSEL1             
+00000616  LCDCSSEL1_L           
+00000617  LCDCSSEL1_H           
+00000618  LCDCSSEL2             
+00000618  LCDCSSEL2_L           
+00000619  LCDCSSEL2_H           
+0000061e  LCDIV                 
+00000620  LCDM0W                
+00000620  LCDM0W_L              
+00000621  LCDM0W_H              
+00000622  LCDM2W                
+00000622  LCDM2W_L              
+00000623  LCDM2W_H              
+00000624  LCDM4W                
+00000624  LCDM4W_L              
+00000625  LCDM4W_H              
+00000626  LCDM6W                
+00000626  LCDM6W_L              
+00000627  LCDM6W_H              
+00000628  LCDM8W                
+00000628  LCDM8W_L              
+00000629  LCDM8W_H              
+0000062a  LCDM10W               
+0000062a  LCDM10W_L             
+0000062b  LCDM10W_H             
+0000062c  LCDM12W               
+0000062c  LCDM12W_L             
+0000062d  LCDM12W_H             
+0000062e  LCDM14W               
+0000062e  LCDM14W_L             
+0000062f  LCDM14W_H             
+00000630  LCDM16W               
+00000630  LCDM16W_L             
+00000631  LCDM16W_H             
+00000632  LCDM18W               
+00000632  LCDM18W_L             
+00000633  LCDM18W_H             
+00000634  LCDM20W               
+00000634  LCDM20W_L             
+00000635  LCDM20W_H             
+00000636  LCDM22W               
+00000636  LCDM22W_L             
+00000637  LCDM22W_H             
+00000638  LCDM24W               
+00000638  LCDM24W_L             
+00000639  LCDM24W_H             
+0000063a  LCDM26W               
+0000063a  LCDM26W_L             
+0000063b  LCDM26W_H             
+0000063c  LCDM28W               
+0000063c  LCDM28W_L             
+0000063d  LCDM28W_H             
+0000063e  LCDM30W               
+0000063e  LCDM30W_L             
+0000063f  LCDM30W_H             
+00000640  LCDBM0W               
+00000640  LCDBM0W_L             
+00000640  LCDM32W               
+00000640  LCDM32W_L             
+00000641  LCDBM0W_H             
+00000641  LCDM32W_H             
+00000642  LCDBM2W               
+00000642  LCDBM2W_L             
+00000642  LCDM34W               
+00000642  LCDM34W_L             
+00000643  LCDBM2W_H             
+00000643  LCDM34W_H             
+00000644  LCDBM4W               
+00000644  LCDBM4W_L             
+00000644  LCDM36W               
+00000644  LCDM36W_L             
+00000645  LCDBM4W_H             
+00000645  LCDM36W_H             
+00000646  LCDBM6W               
+00000646  LCDBM6W_L             
+00000646  LCDM38W               
+00000646  LCDM38W_L             
+00000647  LCDBM6W_H             
+00000647  LCDM38W_H             
+00000648  LCDBM8W               
+00000648  LCDBM8W_L             
+00000649  LCDBM8W_H             
+0000064a  LCDBM10W              
+0000064a  LCDBM10W_L            
+0000064b  LCDBM10W_H            
+0000064c  LCDBM12W              
+0000064c  LCDBM12W_L            
+0000064d  LCDBM12W_H            
+0000064e  LCDBM14W              
+0000064e  LCDBM14W_L            
+0000064f  LCDBM14W_H            
+00000650  LCDBM16W              
+00000650  LCDBM16W_L            
+00000651  LCDBM16W_H            
+00000652  LCDBM18W              
+00000652  LCDBM18W_L            
+00000653  LCDBM18W_H            
+00000660  BAKMEM0               
+00000660  BAKMEM0_L             
+00000661  BAKMEM0_H             
+00000662  BAKMEM1               
+00000662  BAKMEM1_L             
+00000663  BAKMEM1_H             
+00000664  BAKMEM2               
+00000664  BAKMEM2_L             
+00000665  BAKMEM2_H             
+00000666  BAKMEM3               
+00000666  BAKMEM3_L             
+00000667  BAKMEM3_H             
+00000668  BAKMEM4               
+00000668  BAKMEM4_L             
+00000669  BAKMEM4_H             
+0000066a  BAKMEM5               
+0000066a  BAKMEM5_L             
+0000066b  BAKMEM5_H             
+0000066c  BAKMEM6               
+0000066c  BAKMEM6_L             
+0000066d  BAKMEM6_H             
+0000066e  BAKMEM7               
+0000066e  BAKMEM7_L             
+0000066f  BAKMEM7_H             
+00000670  BAKMEM8               
+00000670  BAKMEM8_L             
+00000671  BAKMEM8_H             
+00000672  BAKMEM9               
+00000672  BAKMEM9_L             
+00000673  BAKMEM9_H             
+00000674  BAKMEM10              
+00000674  BAKMEM10_L            
+00000675  BAKMEM10_H            
+00000676  BAKMEM11              
+00000676  BAKMEM11_L            
+00000677  BAKMEM11_H            
+00000678  BAKMEM12              
+00000678  BAKMEM12_L            
+00000679  BAKMEM12_H            
+0000067a  BAKMEM13              
+0000067a  BAKMEM13_L            
+0000067b  BAKMEM13_H            
+0000067c  BAKMEM14              
+0000067c  BAKMEM14_L            
+0000067d  BAKMEM14_H            
+0000067e  BAKMEM15              
+0000067e  BAKMEM15_L            
+0000067f  BAKMEM15_H            
+00000700  ADCCTL0               
+00000700  ADCCTL0_L             
+00000701  ADCCTL0_H             
+00000702  ADCCTL1               
+00000702  ADCCTL1_L             
+00000703  ADCCTL1_H             
+00000704  ADCCTL2               
+00000704  ADCCTL2_L             
+00000705  ADCCTL2_H             
+00000706  ADCLO                 
+00000706  ADCLO_L               
+00000707  ADCLO_H               
+00000708  ADCHI                 
+00000708  ADCHI_L               
+00000709  ADCHI_H               
+0000070a  ADCMCTL0              
+0000070a  ADCMCTL0_L            
+0000070b  ADCMCTL0_H            
+00000712  ADCMEM0               
+00000712  ADCMEM0_L             
+00000713  ADCMEM0_H             
+0000071a  ADCIE                 
+0000071a  ADCIE_L               
+0000071b  ADCIE_H               
+0000071c  ADCIFG                
+0000071c  ADCIFG_L              
+0000071d  ADCIFG_H              
+0000071e  ADCIV                 
+0000071e  ADCIV_L               
+0000071f  ADCIV_H               
+00002760  _stack                
+00002800  __STACK_END           
+0000c45c  main                  
+0000c4da  _c_int00_noinit_noargs
+0000c4ee  memcpy                
+0000c500  __TI_ISR_TRAP         
+0000c508  C$$EXIT               
+0000c508  abort                 
+0000c50e  _system_pre_init      
+0000ffe2  __TI_int45            
+0000ffe4  __TI_int46            
+0000ffe6  __TI_int47            
+0000ffe8  __TI_int48            
+0000ffea  __TI_int49            
+0000ffec  __TI_int50            
+0000ffee  __TI_int51            
+0000fff0  __TI_int52            
+0000fff2  __TI_int53            
+0000fff4  __TI_int54            
+0000fff6  __TI_int55            
+0000fff8  __TI_int56            
+0000fffa  __TI_int57            
+0000fffc  __TI_int58            
+0000fffe  _reset_vector         
+ffffffff  __TI_pprof_out_hndl   
+ffffffff  __TI_prof_data_size   
+ffffffff  __TI_prof_data_start  
+ffffffff  __c_args__            
+
+[536 symbols]
