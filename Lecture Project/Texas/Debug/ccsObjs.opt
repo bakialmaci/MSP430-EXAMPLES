@@ -1,0 +1,1 @@
+"./Main.obj" "./Source/Pages.obj" "./Source/SPI.obj" "./Source/ST7920.obj" "./Source/UTILS.obj" "../lnk_msp430fr4133.cmd" -llibc.a 
