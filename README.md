@@ -22,7 +22,6 @@ Please make sure to update tests as appropriate.
 👨🏻‍💻 **Baki ALMACI**
 
 Email: [bakialmaci@gmail.com](mailto:bakialmaci@gmail.com) / 
-Twitter: [@baki_almaci](https://twitter.com/baki_almaci) /
 Github: [@bakialmaci](https://github.com/bakialmaci)
 
 ## ✅ License 
